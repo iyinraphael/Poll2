@@ -8,20 +8,27 @@
 
 import UIKit
 
-class VotingUIViewController: UIViewController {
-
+class VotingUIViewController: UIViewController, VoteControllerProtocol {
+    var voteController: VoteController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var responseTextField: UITextField!
+    @IBAction func vote(_ sender: Any) {
+        guard let name = nameTextField.text,
+            let response = responseTextField.text else {return}
+        
+        voteController?.createVote(name: name, response: response)
+        
     }
     
-
     /*
     // MARK: - Navigation
 
