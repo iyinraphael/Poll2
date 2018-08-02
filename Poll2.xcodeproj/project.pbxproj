@@ -20,6 +20,7 @@
 		9411A48F21139F4700BC0E14 /* combined.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9411A48E21139F4700BC0E14 /* combined.storyboard */; };
 		9411A4912113A01A00BC0E14 /* CombinedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9411A4902113A01A00BC0E14 /* CombinedViewController.swift */; };
 		9411A4932113A7FB00BC0E14 /* PollingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9411A4922113A7FB00BC0E14 /* PollingTabBarController.swift */; };
+		9411A4962113A8CF00BC0E14 /* VoteControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9411A4952113A8CF00BC0E14 /* VoteControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9411A48E21139F4700BC0E14 /* combined.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = combined.storyboard; sourceTree = "<group>"; };
 		9411A4902113A01A00BC0E14 /* CombinedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinedViewController.swift; sourceTree = "<group>"; };
 		9411A4922113A7FB00BC0E14 /* PollingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollingTabBarController.swift; sourceTree = "<group>"; };
+		9411A4952113A8CF00BC0E14 /* VoteControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		9411A46C211394F400BC0E14 /* Poll2 */ = {
 			isa = PBXGroup;
 			children = (
+				9411A4942113A8A300BC0E14 /* Protocol */,
 				9411A48721139AE800BC0E14 /* view controller */,
 				9411A482211396EF00BC0E14 /* model controller */,
 				9411A47F2113966D00BC0E14 /* model */,
@@ -110,6 +113,14 @@
 				9411A4922113A7FB00BC0E14 /* PollingTabBarController.swift */,
 			);
 			path = "view controller";
+			sourceTree = "<group>";
+		};
+		9411A4942113A8A300BC0E14 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9411A4952113A8CF00BC0E14 /* VoteControllerProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				9411A4842113971700BC0E14 /* VoteController.swift in Sources */,
 				9411A4812113968900BC0E14 /* Vote.swift in Sources */,
 				9411A46E211394F400BC0E14 /* AppDelegate.swift in Sources */,
+				9411A4962113A8CF00BC0E14 /* VoteControllerProtocol.swift in Sources */,
 				9411A4932113A7FB00BC0E14 /* PollingTabBarController.swift in Sources */,
 				9411A48921139B3C00BC0E14 /* VotingUIViewController.swift in Sources */,
 				9411A48D21139C1900BC0E14 /* ResultsTableViewController.swift in Sources */,
