@@ -8,16 +8,26 @@
 
 import UIKit
 
-class CombinedViewController: UIViewController {
+class CombinedViewController: UIViewController, VoteControllerProtocol {
 
-
+    var voteController: VoteController?
+    var resultsTableViewController: ResultsTableViewController!
+    var votingViewController: VotingUIViewController!
+   
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let resultVc = segue.destination as? ResultsTableViewController {
+        resultsTableViewController = resultVc
+        resultsTableViewController.voteController = voteController
+        
+    }
+        if let voteVc = segue.destination as? VotingUIViewController{
+            votingViewController = voteVc
+            votingViewController.voteController = voteController
+        }
+
+    }
 
 }
