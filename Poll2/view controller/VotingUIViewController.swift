@@ -21,22 +21,25 @@ class VotingUIViewController: UIViewController, VoteControllerProtocol {
     
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var responseTextField: UITextField!
+    
     @IBAction func vote(_ sender: Any) {
         guard let name = nameTextField.text,
-            let response = responseTextField.text else {return}
+        let response = responseTextField.text else {return}
         
         voteController?.createVote(name: name, response: response)
         
+        //clears texField after submit
+        
+        nameTextField.text = ""
+        responseTextField.text = ""
+        
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func swichToResult(_ sender: Any) {
+        tabBarController?.selectedIndex = 1
     }
-    */
+    
+   
 
 }

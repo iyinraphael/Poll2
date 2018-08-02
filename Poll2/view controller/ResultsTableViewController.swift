@@ -8,6 +8,9 @@
 
 import UIKit
 
+
+
+
 class ResultsTableViewController: UITableViewController, VoteControllerProtocol {
     var voteController: VoteController?
     
@@ -34,8 +37,7 @@ class ResultsTableViewController: UITableViewController, VoteControllerProtocol 
         cell.detailTextLabel?.text = vote?.response
         return cell
 
-        
-
 
     }
+    
 }
