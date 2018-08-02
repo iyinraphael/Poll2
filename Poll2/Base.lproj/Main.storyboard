@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Polling Tab Bar Controller-->
         <scene sceneID="ry4-g7-I2x">
             <objects>
-                <tabBarController id="efw-SF-zbA" sceneMemberID="viewController">
+                <tabBarController id="efw-SF-zbA" customClass="PollingTabBarController" customModule="Poll2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5T6-1u-n6o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
